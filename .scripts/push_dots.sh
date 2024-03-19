@@ -1,9 +1,10 @@
-#!/bin/zsh
+#!/bin/bash
 
-alias dots='/usr/bin/git --git-dir=/Users/moritz/.dots/ --work-tree=/Users/moritz'
 
-files='~/.zshrc '
+files="~/.zshrc ~/.p10k.zsh ~/.scripts/push_dots.sh ~/.config/kitty/kitty.conf ~/.config/wezterm/wezterm.lua"
 
-dots add .
-dots commit -m "c"
-dots push
+/usr/bin/git --git-dir=/Users/moritz/.dots/ --work-tree=/Users/moritz add ~/.zshrc ~/.p10k.zsh ~/.scripts/push_dots.sh ~/.config/kitty/kitty.conf ~/.config/wezterm/wezterm.lua
+
+
+/usr/bin/git --git-dir=/Users/moritz/.dots/ --work-tree=/Users/moritz commit -m "c"
+/usr/bin/git --git-dir=/Users/moritz/.dots/ --work-tree=/Users/moritz push
