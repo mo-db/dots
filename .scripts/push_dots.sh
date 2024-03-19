@@ -2,6 +2,8 @@
 
 alias dots='/usr/bin/git --git-dir=/Users/moritz/.dots/ --work-tree=/Users/moritz'
 
+files='~/.zshrc '
+
 dots add .
-/usr/bin/git --git-dir=/Users/moritz/.dots/ --work-tree=/Users/moritz commit -m "c"
-/usr/bin/git --git-dir=/Users/moritz/.dots/ --work-tree=/Users/moritz push
+dots commit -m "c"
+dots push

@@ -22,4 +22,5 @@ eval "$(fzf --zsh)"
 ### ALIAS ###
 alias denv='bash /Users/moritz/.config/wezterm/dev_env.sh'
 alias dots='/usr/bin/git --git-dir=/Users/moritz/.dots/ --work-tree=/Users/moritz'
+alias dotsp='~/.scripts/push_dots.sh'
 
