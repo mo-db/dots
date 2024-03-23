@@ -5,9 +5,9 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
 -- This is where you actually apply your config choices
-config.color_scheme = "3024 Night (Gogh)"
-config.font = wezterm.font("Fira Code")
-config.font_size = 16
+config.color_scheme = "Tango (terminal.sexy"
+config.font = wezterm.font("IBM Plex Mono")
+config.font_size = 18
 config.keys = {
 	{
 		key = "p",
@@ -22,7 +22,7 @@ config.window_padding = {
 	top = "0cell",
 	bottom = "0cell",
 }
-config.window_decorations = "TITLE | RESIZE"
+config.native_macos_fullscreen_mode = true
 
 -- and finally, return the configuration to wezterm
 return config
